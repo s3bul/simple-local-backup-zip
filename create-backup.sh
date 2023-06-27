@@ -9,7 +9,7 @@ if [ ! -d "${SCRIPT_FILE_PATH}" ]; then
   exit 1
 fi
 
-scriptPath=$(realpath $(dirname "$0"))
+scriptPath=$(realpath "$(dirname "$0")")
 zipPath=${SCRIPT_ZIP_PATH:-${scriptPath}}
 
 if [ ! -d "${zipPath}" ]; then
